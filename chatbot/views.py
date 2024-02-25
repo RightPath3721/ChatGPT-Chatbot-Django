@@ -8,7 +8,7 @@ from .models import Chat
 
 from django.utils import timezone
 
-openai_api_key = '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' # Replace YOUR_API_KEY with your openai apikey 
+openai_api_key = '' # Replace YOUR_API_KEY with your openai apikey 
 openai.api_key = openai_api_key 
 
 prompt = "Act as a travel guide. You should ask user with very interesting question that is related with travel, such as 'Would you rather jump out of a plane or surf hawaii?', 'If you're stranded on a desert island, then what do you eat first the snails or crickets?'"
