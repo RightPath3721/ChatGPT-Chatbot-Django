@@ -5,10 +5,12 @@ import openai
 from django.contrib import auth
 from django.contrib.auth.models import User
 from .models import Chat
-
+from django.conf import settings
 from django.utils import timezone
+import os
 
-openai_api_key = '' # Replace YOUR_API_KEY with your openai apikey 
+openai_api_key = settings.OPEN_AI_KEY
+print("openai-key", openai_api_key)
 openai.api_key = openai_api_key 
 
 prompt = "Act as a travel guide. You should ask user with very interesting question that is related with travel, such as 'Would you rather jump out of a plane or surf hawaii?', 'If you're stranded on a desert island, then what do you eat first the snails or crickets?'"
