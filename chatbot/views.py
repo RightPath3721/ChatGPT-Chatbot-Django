@@ -32,8 +32,6 @@ def ask_openai(message):
     answer = response.choices[0].message.content.strip()
     return answer
 
-# Create your views here.
-
 def chatbot(request):
     chats = Chat.objects.filter(user=request.user)
 
